@@ -33,7 +33,7 @@
 #include <google/protobuf/stubs/int128.h>
 #include <google/protobuf/stubs/stringprintf.h>
 #include <google/protobuf/stubs/strutil.h>
-#include <google/protobuf/stubs/time.h>
+#include <google/protobuf/stubs/gtime.h>
 #include <google/protobuf/duration.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 

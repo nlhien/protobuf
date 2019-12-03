@@ -32,7 +32,7 @@
 
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/time.h>
+#include <google/protobuf/stubs/gtime.h>
 #include <google/protobuf/util/internal/expecting_objectwriter.h>
 #include <google/protobuf/util/internal/object_writer.h>
 #include <gtest/gtest.h>
