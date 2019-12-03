@@ -35,7 +35,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include <google/protobuf/stubs/time.h>
+#include <google/protobuf/stubs/gtime.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/util/internal/field_mask_utility.h>
