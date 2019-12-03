@@ -2,12 +2,12 @@ Pod::Spec.new do |s|
   s.name     = 'Protobuf-C++'
   s.version  = '3.11.0'
   s.summary  = 'Protocol Buffers v3 runtime library for C++.'
-  s.homepage = 'https://github.com/google/protobuf'
+  s.homepage = 'https://github.com/nlhien/protobuf'
   s.license  = '3-Clause BSD License'
   s.authors  = { 'The Protocol Buffers contributors' => 'protobuf@googlegroups.com' }
   s.cocoapods_version = '>= 1.0'
 
-  s.source = { :git => 'https://github.com/google/protobuf.git', :branch => "internal/master" }
+  s.source = { :git => 'https://github.com/nlhien/protobuf.git', :branch => "internal/master" }
 
   s.source_files = 'src/google/protobuf/*.{h,cc,inc}',
                    'src/google/protobuf/stubs/*.{h,cc}',
@@ -32,10 +32,9 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     # Do not let src/google/protobuf/stubs/time.h override system API
     'USE_HEADERMAP' => 'NO',
-    'ALWAYS_SEARCH_USER_PATHS' => 'NO',
-
     # Configure tool is not being used for Xcode. When building, assume pthread is supported.
     'GCC_PREPROCESSOR_DEFINITIONS' => '"$(inherited)" "HAVE_PTHREAD=1"',
+    'HEADER_SEARCH_PATHS' => '${PODS_TARGET_SRCROOT}/src'    
   }
 
 end
